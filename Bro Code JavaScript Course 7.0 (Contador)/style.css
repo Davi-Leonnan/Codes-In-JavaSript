@@ -1,0 +1,36 @@
+/* Estilizar o valor motstrado */
+
+#countLabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica;
+}
+
+/* Coloca os botões no centro */
+
+
+#buttonContainer {
+    text-align:  center;
+}
+
+/* Estiliza os botões exibidos */
+
+
+.buttons {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: whitesmoke;
+    background-color: rgb(29, 96, 230);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+/* Adiciona uma animação de transição de cor quando se passa o 
+mouse nos botões */
+
+
+.buttons:hover {
+    background-color:rgb(18, 60, 143);
+}
