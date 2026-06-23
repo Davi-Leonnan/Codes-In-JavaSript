@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Desafio - Dashboard</title>
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    
+    <header class="header">
+      <h2>Painel Administrativo</h2>
+      <div class="perfil">Admin</div>
+    </header>
+
+    <aside class="sidebar">
+      <nav class="options">
+        <a href="#">Início</a>
+        <a href="#">Relatórios</a>
+        <a href="#">Configurações</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section class="cards-estatisticas">
+        <article class="card">
+          <h3>Usuários Ativos</h3>
+          <label id="countLabel">0</label> <br>
+          <div id="buttonContainer">
+          <button id="decreaseButton" class="buttons"> Diminuir </button>
+          <button id="increaseButton" class="buttons"> Aumentar </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Vendas Hoje</h3>
+          <label id="countLabel2">0</label> <br>
+          <div id="buttonContainer2">
+          <button id="decreaseButton2" class="buttons2"> Diminuir </button>
+          <button id="increaseButton2" class="buttons2"> Aumentar </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Servidor</h3>
+          <label id="countLabel3">online</label> <br>
+          <div id="buttonContainer3">
+          <button id="decreaseButton3" class="buttons3"> Online </button>
+          <button id="increaseButton3" class="buttons3"> Offline </button>
+          </div>
+        </article>
+      </section>
+      
+      <section class="conteudo-extra">
+        <p>Área reservada para gráficos e tabelas detalhadas do sistema.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 - Sistema Interno. Todos os direitos reservados.</p>
+    </footer>
+
+  </div>
+
+  <script src="index.js"> </script>
+
+</body>
+</html>

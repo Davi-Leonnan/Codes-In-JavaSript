@@ -1,0 +1,143 @@
+:root {
+    --cor-primaria: rgba(33, 34, 36);
+    --cor-secundaria: rgba(23, 27, 44);
+    --cor-terciaria: rgba(255, 255, 255);
+    --cor-quartenaria: rgba(244, 248, 248);
+    --cor-quintenaria: rgba(68, 116, 236);
+    --fonte-principal: 'Inter';
+
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  min-height: 100vh;
+}
+
+/* Layout principal */
+.dashboard-layout {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: var(--cor-terciaria);
+}
+
+/* Cabeçalho */
+.header {
+  grid-area: header;
+  background-color: #0d1b2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.header h2 {
+  color: var(--cor-terciaria);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.perfil {
+  color: var(--cor-terciaria);
+  font-size: 14px;
+}
+
+/* Sidebar */
+.sidebar {
+  grid-area: sidebar;
+  background-color: var(--cor-terciaria);
+  padding: 24px 16px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.options a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 14px;
+}
+
+.options a:hover {
+  color: var(--cor-quintenaria);
+}
+
+/* Conteúdo principal */
+.main-content {
+  grid-area: main;
+  background-color: #f0f2f5;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+/* Cards de estatísticas */
+.cards-estatisticas {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--cor-terciaria);
+  border-radius: 6px;
+  padding: 20px 24px;
+  flex: 1;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  font-size: 13px;
+  font-weight: normal;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.dado {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--cor-quintenaria);
+}
+
+/* Área de conteúdo extra */
+.conteudo-extra {
+  background-color: var(--cor-terciaria);
+  border-radius: 6px;
+  padding: 24px;
+  flex: 1;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.conteudo-extra p {
+  font-size: 13px;
+  color: #888888;
+}
+
+/* Rodapé */
+.footer {
+  grid-area: footer;
+  background-color: var(--cor-terciaria);
+  text-align: center;
+  padding: 14px;
+}
+
+.footer p {
+  font-size: 12px;
+  color: #888888;
+}
