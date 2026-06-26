@@ -1,0 +1,21 @@
+#OM {
+    font-style: italic;
+    font-size: 5em;
+    color: rgb(72, 40, 212);
+    display: flex;
+    
+}
+
+body {
+    font-family: Verdana;
+    text-align: center;
+}
+
+#mySubmit {
+    font-size: 2em;
+    font-style: italic;
+    border-radius: 10em;
+    background-color: rgb(72, 40, 212);
+    color:white;
+}
+
